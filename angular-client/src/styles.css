@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+img {
+    border: 8px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,21 @@
+.homeComponentMain {
+    padding: 16px;
+}
+
+.mainPhoto, .proposalSpotPhoto {
+    width: 100%;
+}
+
+area {
+    border: 3px solid white;
+}
+
+area:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 767px) {
+    .graduationPhoto {
+        width: 100%;
+    }
+}
