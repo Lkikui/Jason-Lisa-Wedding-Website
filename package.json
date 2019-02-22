@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Lkikui/Jason-Lisa-Wedding-Website#readme",
   "dependencies": {
-    "mongodb": "^2.2.36"
+    "mongodb": "^3.1.13"
   },
   "devDependencies": {
     "@angular/cli": "^7.3.3"
