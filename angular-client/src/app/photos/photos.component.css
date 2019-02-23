@@ -1,0 +1,18 @@
+.container {
+    padding-top: 16px;
+}
+
+.card {
+    padding-top: 15px;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.engagementThumb {
+    background: url(https://lh3.googleusercontent.com/34mg-CgIg5eC_pdC9iRb3VlA3SUVSeFHVkUzV52xqKzAHa9NNshK0LpPL_as78Tu8nDHnNeUoB5QK1tNzFTD9mRPO9dKxfC16hrrTvbGSLGzNKYnO2-z5Nya19Wt2JiBxxOjfeD_tByWglLu_4y_mll5zSwL02Hre9lRMMIxV2X-Kn9-6bhKvCDUWSXpg9IcksAPQEqpixuLhyTipG0Rtpjw9Ef4bGm5sjbqru8_8tLg_VT0zF0qFDTWkeGPUwi01iqPS4y8IaooEw7fcMuTIyHzv7z1CSzzoVZkkU8xKXrq81pdiaUioPHhD9CM3wDfDJg46D55vdIJZCYP7WsQRWTClxFVjgby-US5w3EOjyd-fQbT0JmZlMu3flHyNr7S1blcr2CXWDjT2Z-y7aQcmVB9iCv2MkRl0znzpA9pP67wzqjqBOr0LJJZi_kvVhFBfHjIMYGT-4SWCgHvSTlROh6SX4Myecv5kZJwn5X6IGEW0Gdtt7XCBTcLoUxsuD3irac7iAGQOl7glctzt9oyXLLSbGo4vMsWz0-BbSxHqkzggiK9qsfrybdc73m2M3z3_vyljCVH9Zf4FZBYzcS8uYFutqFe5ETGWmB7xlBDjI_hkZmHoPxBr01xOjKpKX0_zWhLlNm18_YFw-EB4M2Hy23e98YWgUg9PkcwDrG0dCkxw5Cp7PCi3y__jquJ2ubiyuD0Mi2_M3OZr1e6Uyg4vBNN=w576-h864-no) 
+        50% 25% no-repeat;
+    background-size: 100%;
+    padding-bottom: 100%;
+}
