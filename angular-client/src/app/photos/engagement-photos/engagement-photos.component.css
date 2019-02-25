@@ -1,3 +1,20 @@
 img {
     width: 100%;
 }
+
+img:hover {
+    cursor: pointer;
+}
+
+.close {
+    font-size: 2.5rem;
+    font-weight: 125;
+    line-height: 1;
+    color: #c3c3c3;
+    text-shadow: none;
+    opacity: 1;
+}
+
+.close:hover {
+    color: white;
+}
