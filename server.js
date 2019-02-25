@@ -5,12 +5,14 @@ var MongoClient = require('mongodb').MongoClient
 var url = 'mongodb://localhost:27017/wedding-website';
 
 // Use connect method to connect to the server
-MongoClient.connect(url, function(err, db) {
-  assert.equal(null, err);
-  console.log("Connected successfully to server");
+MongoClient.connect(url, { useNewUrlParser: true },
+  function(err, db) {
+    assert.equal(null, err);
+    console.log("Connected successfully to server");
 
-  db.close();
-});
+    db.close();
+  }
+);
 
 var insertDocuments = function(db, callback) {
     // Get the documents collection
