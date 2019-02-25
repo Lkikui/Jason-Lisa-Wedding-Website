@@ -5,14 +5,15 @@ import { HomePageComponent } from './home.component';
 import { DetailsComponent } from './details/details.component';
 import { PhotosComponent } from './photos/photos.component';
 import { GiftRegistryComponent } from './gift-registry/gift-registry.component';
-
+import { TravelComponent } from './travel/travel.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomePageComponent },
   { path: 'details', component: DetailsComponent },
   { path: 'photos', component: PhotosComponent },
-  { path: 'registry', component: GiftRegistryComponent }
+  { path: 'registry', component: GiftRegistryComponent },
+  { path: 'travel', component: TravelComponent }
 ];
 
 @NgModule({
