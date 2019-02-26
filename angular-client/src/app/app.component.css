@@ -1,0 +1,26 @@
+h1 {
+    font-size: 3rem;
+}
+
+div.banner {
+    padding: 15px;
+}
+
+div.banner > h1, h3 {
+    font-family: 'Great Vibes', cursive;
+}
+
+nav {
+    background-color: #f7f2f0;
+}
+
+div#navbar > ul > li {
+    padding: 0 0.20rem;
+}
+
+div#navbar > ul > li > a.nav-link {
+    font-family: 'Comfortaa', cursive;
+    text-transform: uppercase;
+    font-size: 0.70rem;
+    letter-spacing: 0.25rem;
+}
