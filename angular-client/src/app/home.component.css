@@ -1,8 +1,12 @@
-.homeComponentMain {
+div.homeComponentMain {
     padding: 16px;
 }
 
-.mainPhoto, .proposalSpotPhoto {
+img.mainPhoto {
+    margin-bottom: 40px;
+}
+
+img.mainPhoto, img.proposalSpotPhoto {
     width: 100%;
 }
 
@@ -15,7 +19,7 @@ area:hover {
 }
 
 @media (max-width: 767px) {
-    .graduationPhoto {
+    img.graduationPhoto {
         width: 100%;
     }
 }

@@ -1,17 +1,33 @@
-h1 {
-    font-size: 3rem;
-}
-
 div.banner {
     padding: 15px;
+}
+
+div.banner > h1 {
+    font-size: 3rem;
 }
 
 div.banner > h1, h3 {
     font-family: 'Great Vibes', cursive;
 }
 
-nav {
-    background-color: #f7f2f0;
+nav.navbar-light {
+    background-color: #CBE4E3;
+    border-top: dotted;
+    border-bottom: dotted;
+    border-width: 8px;
+    border-color: #fff;
+}
+
+div#navbar > ul > li > a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+div#navbar > ul > li > a:hover {
+    color: #000 !important;
+}
+
+.navbar-nav .active > .nav-link {
+    color: #fff !important;
 }
 
 div#navbar > ul > li {
@@ -19,8 +35,5 @@ div#navbar > ul > li {
 }
 
 div#navbar > ul > li > a.nav-link {
-    font-family: 'Comfortaa', cursive;
     text-transform: uppercase;
-    font-size: 0.70rem;
-    letter-spacing: 0.25rem;
 }
