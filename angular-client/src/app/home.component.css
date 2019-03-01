@@ -89,10 +89,6 @@ div.hisSide, div.howItBegan {
     border-left:1px solid #F8D3D3;
 }
 
-p.lastParagraph {
-    margin-bottom: 0;
-}
-
 @media (max-width: 767px) {
     img.graduationPhoto {
         width: 100%;
