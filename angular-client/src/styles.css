@@ -6,13 +6,13 @@ img {
 }
 
 body {
-    /* background-color: #f7f2f0; */
+    background-image: url('https://lh3.googleusercontent.com/7sTjGP8f287oM1luYJYyMKLe7MLNrvm4md9VVp3F8w7uvSNxQVJd_VMnYd5KfJmA14VSgkjr1kIQwcPjtLX1PjUclHp5XNFdikrlTg92dax7Z8VwM-j5eOMJ0dvmAVbLY34zY3sZH32ythOtV8yBzW71e4OgyNPoEX_2eIO-4d2Ku7bDgv33pcTHnLySk1L6fcaEGzUaI3PTfhcCkHXEcJlxbvWI6eqAdnODGdPj2TEFs7VjM6kfsdelxLLBlJiRXzPEOJodwJ1ZOMkpGj2jHyd1ZgkqGl7MW8W8X-BEo1BwBpg_zAHppIBcCyIFusbCYQcyCgT4Pn2epfjKOcDSxodq3XWKVIeE9xsvXZ-a-bvchB6cSpLB6bvLAjxLV48mzvxxp9X8s9RSzl-f24kfMuOYTYz8yD5qIiIpqAwZfvG0mgu2EEj6ljgQrf18JFJIT-nFidh61D82sGKr17lu7ATMYhhmj8N0uw_4uzIcK2Fichr2X-o4J2Jqk_8h0Hs7tpHtoDE21eV3Gtc3kUY6Ck8f2Qe2T4DhA0QV0Pa9G312W651IBadXSgl8L6tlC5-JAln88PXSV-HjdFFCrO6uPN9hvJf93v_KEoDPpfYQHMegtZCMcnUiQo5F5HZcL_-iKTn29VRi6KB4fdLRUWkkjDu7_qulRbsAkmti3qS4RRJmO1UNMJ09anpE70efW3-wAii9qyUgukPxgBaQz9b-9UC=w292-h813-no'), url('https://lh3.googleusercontent.com/riU0irffGAh_PnLOhGUdqfBd9YXyHnrezjAuFfgJZ4GY3OKXmKtFoqkYaSfmqTQkmhCLDnxA86hfKwEd-UGuDkVviguy0SV1LSgpe8qx9sGfhaYVaScWsbxKcXXjdbHNecjGtzPKRNkxUR-ad8fk08zDbMz2uCkEzACEL-WkL4mH4hXCLGBdIffg-JgTkMChYmfPGOacldxjM73NXMbeg6Yf37gspsRrYuX6P5GJCi86Y9nD49cuMHRSbp3t7rOqcNhe9X_r1Z8CMMpwS8NYpc_tPSuXzWGwp3nWRJZDgbOcyt0h8ST64XPYMe__4hQ08t0YM-akiZGr5GgSfxqlM1W1AhksmwIOShP54NzuQQFwoFfZuchVa-GNKbcgNTCymgvlo5Rtt1o59Y8bRs9d68tN2F3LHp12E1NFONUTCGWy29ucv2YtNTGI4j7iTFkwaZiyDCML81KHRF2vE-5XV7AH8nIN9QjZOyNVoCAjoQd4ENvSYr49Al2H05ECeqGOfnkzYk67jREwrpC3uc15SBNDVncnoE79aNqhj7mWdQzHbMnASjDdJhoCrkRVoyGJhxsboIZqzUkyD_VUDkyN-EqvTpjQPvzkjY0KhOKfA-8mpj41PXufqNoV863a4m2HivXXEc8xxTjKR2RJxb36B-nXCBd0575ClDInRRWf5cDXnvstdS-vkuwRIl0sIKEsYAx-hXHBHXd_Sx_JnNYjvME6=w289-h813-no');
+    background-position: left center, right center;
+    /* background-image: url('https://lh3.googleusercontent.com/oTqrh3zhjTLz0tzEqN7QEagm4QaRztXPb9J-hn5hYpAiw9-h9kk_cIikVNrFSAraZbd33NEMA8AtHz-apjLTTwvlqUa0wn_0ld3rDdUsfDaOaB468DlnbvFoAHVGDdLCl-aGyc0c-wIt465aLoT-aZsEB_pvKRpu9VZlni0ZI-owSMstCujpqwd0Vbc5kDgBkxDIE0NU2OAEA1nEYe9cc9Hwp3Mlhrg1Tj7hMIkwWkRGiqzYElH-gnSlFtJJ9t-Nht5vyl6SF_INf2Vjwk7EzeoGeJ1O4AJSHCSdWGA8neYzHmNtZMQLf39vlm5-phF7AqUgGfCZRdayeatI0CFwhd04vnxgyY2R7oERJtabnmAKuAN2-I4fIjeiCOKsYAfbSIJDKQp9b3t-VUafuCBy6Gs-JQG50HVUWL5ybGfB7aFQapK85_oHZr5CaJKVPrvc3jByAzFFIM4k7F4A0kEYyYc1-1eXEsauQurnxyiLpQVBtgGlm5bv_6J04x7GpRyU57o5ejRuBZIqAPoJtv0NLKzb9HR_lncFDcX7UKXdBLWxgcs4WGXCxklM65ThWNi3QwNvdZ8X4T0sODdMCoCcfCCsRAy9w4Ftq1jXQyd3-VmbZmXc5VLHUoPZj6ryQHQYfZpi36O0OHOO2AZMUwkImj20UB8Ugxr0TL1cwim81A7RO_vN7HlXLcwrthvAjMfuH6REAEXYjEvl5Tp18sGekVex=w586-h317-no'), url('https://lh3.googleusercontent.com/pc2KJZT8rYKrWmP8i2CYArJU4O00vyVPJrP9HuM5_81R0ZnZnHstMEAHeULgKAuq22PGbEi_vBD9nJh9NX9PCtn0ozaaCdXvjV-cTVhZHACEZiCchV7dFjAam0l1x2U62Zd6WzOEF0XqbElfw_-20LB0uT5HPPgTy8Qt760NRAVVwVC8awHsnYvjIJ9MOzTo7ScOd5ixJ_6tADzLk4JqJLNSGxWO_rQNnreG4b00FKvy3VFegzXky4gaqOo_aWRUkIkW-sDvgi8OlR5IHwYrv5yQTBSd1HcpEEhtydNy-IXYr0NktxUCZ7lDdZvzBJpQVmFP0K7GleR37Yvu6uTTv30NzgSjcHg4CbkqmBvFlJc2X0DvdwZ-XLe1UcWWN2yqYwA3oc0_sHGDfajQkkSevv59b_bjQ6rfSZSSn4yo_-R13jJIi-I1SFmeGF8ifOHyXLMm_8LPKxL0HHPL9CYNvGFrz5lG8qO9XfCC6Yw_rDymp90KNinpBKGADOHfW_NWnuR2lsbJ0ELPIj5ZQQs6By06fFBw_kYfpKqb0OgBzNanGzOLIPmazwdfBR0qZV_fJ2ehyBy6JQQOWp8X4aVXbFTTVKo-PJVPNJgZ85_7yjXK5tsc43XvI7aw1J19YtiLNeaRQ1pKUMRV63dzPLbO53X0RGYa3dqXhGXEYQBPiKdNo35-v0PCOYFIWMrwGG9lQQmany3cS7bnKORnGGSfu7xc=w581-h354-no');
+    background-position: bottom left, top right; */
+    background-repeat: no-repeat;
     background-color: #CBE4E3;
-    /* background-color: #ECE1E0; */
-    /* polka dots */
-    /* background: radial-gradient(circle, white 10%, transparent 10%),
-    radial-gradient(circle, white 10%, #CBE4E3 10%) 50px 50px;
-    background-size:100px 100px; */
+    background-attachment: fixed;
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 23px;
@@ -37,6 +37,40 @@ hr {
     margin: 40px 0px 20px 0px;
     text-transform: uppercase;
     font-weight: bold;
-    /* letter-spacing: 0.25rem; */
     font-size: 17px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    body {
+        background-size: 50%, 50%;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    body {
+        background-size: 40%, 40%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    body {
+        background-size: 28%, 28%;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    body {
+        background-size: 22%, 22%;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    body {
+        background-size: 15%, 15%;
+    }
 }
