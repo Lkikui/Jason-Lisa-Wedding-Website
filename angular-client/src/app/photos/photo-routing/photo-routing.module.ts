@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EngagementPhotosComponent } from '../engagement-photos/engagement-photos.component';
 
 const photoRoutes: Routes = [
-  { path:"engagement-photos", component:EngagementPhotosComponent }
+  { path:"photos/engagement-photos", component:EngagementPhotosComponent }
 ]
 
 @NgModule({
