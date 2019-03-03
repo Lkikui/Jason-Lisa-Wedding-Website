@@ -8,6 +8,7 @@ img:hover {
     cursor: pointer;
 }
 
+/* modal */
 #photoModal {
     padding: 0 !important;
     margin: 0;
@@ -18,9 +19,9 @@ img:hover {
 #photoModal img {
     border: 0;
     padding: 0;
-    margin: 0;
 }
 
+/* close button */
 .close {
     font-size: 2.5rem;
     font-weight: 125;
@@ -28,18 +29,38 @@ img:hover {
     color: #c3c3c3;
     text-shadow: none;
     opacity: 1;
+    position: absolute;
+    top: 5px;
+    right: 15px;
 }
 
 .close:hover {
     color: white;
 }
 
+/* next / previous arrow buttons */
 a.carousel-control-prev, a.carousel-control-next {
     z-index: -1;
 }
 
 div.modal-dialog.modal-dialog-centered {
     padding: 0;
-    width: 100vw;
     height: 100%;
+}
+
+div.carousel-item {
+    transition-duration: 1100ms;
+}
+
+div.carousel-item > img {
+    height: 70vh;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* override Bootstrap max-width restriction for consistent img height */
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: none;
+    }
 }
