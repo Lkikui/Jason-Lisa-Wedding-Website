@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PhotoRoutingModule } from './photos/photo-routing/photo-routing.module';
 import { GiftRegistryComponent } from './gift-registry/gift-registry.component';
 import { TravelComponent } from './travel/travel.component';
+import { RsvpComponent } from './rsvp/rsvp.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { TravelComponent } from './travel/travel.component';
     PhotosComponent,
     EngagementPhotosComponent,
     GiftRegistryComponent,
-    TravelComponent
+    TravelComponent,
+    RsvpComponent
   ],
   imports: [
     BrowserModule,

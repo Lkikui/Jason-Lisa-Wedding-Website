@@ -6,6 +6,7 @@ import { DetailsComponent } from './details/details.component';
 import { PhotosComponent } from './photos/photos.component';
 import { GiftRegistryComponent } from './gift-registry/gift-registry.component';
 import { TravelComponent } from './travel/travel.component';
+import { RsvpComponent } from './rsvp/rsvp.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -13,7 +14,8 @@ const routes: Routes = [
   { path: 'details', component: DetailsComponent },
   { path: 'photos', component: PhotosComponent },
   { path: 'registry', component: GiftRegistryComponent },
-  { path: 'travel', component: TravelComponent }
+  { path: 'travel', component: TravelComponent },
+  { path: 'rsvp', component: RsvpComponent }
 ];
 
 @NgModule({
