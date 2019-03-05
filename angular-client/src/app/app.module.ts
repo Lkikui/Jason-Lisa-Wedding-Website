@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CdkStepperModule } from '@angular/cdk/stepper';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home.component';
@@ -28,7 +29,8 @@ import { RsvpComponent } from './rsvp/rsvp.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    PhotoRoutingModule
+    PhotoRoutingModule,
+    CdkStepperModule
   ],
   providers: [],
   bootstrap: [AppComponent]
