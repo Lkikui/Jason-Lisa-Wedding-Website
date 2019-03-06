@@ -3,6 +3,24 @@ div.col {
     padding-bottom: 20px;
 }
 
+form.container {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+h2.capsFont {
+    margin-bottom: 2rem !important;
+}
+
+input.form-control {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+input.form-control, div.btn-group {
+    margin-bottom: 1rem;
+}
+
 /* Hide all steps by default: */
 .tab {
     display: none;

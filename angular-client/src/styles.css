@@ -50,6 +50,18 @@ hr {
     font-size: 17px;
 }
 
+.btn-burgundy {
+    background-color: #7e1b2f;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+}
+
+.btn-burgundy:hover {
+    background-color: #641626;
+    color: #fff;
+}
+
 /* Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
     body {

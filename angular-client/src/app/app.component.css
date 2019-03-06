@@ -16,6 +16,7 @@ nav.navbar-light {
     border-bottom: dotted;
     border-width: 8px;
     border-color: #fff;
+    margin-bottom: 2rem;
 }
 
 div#navbar > ul > li > a {

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router } from '@angular/router';
+import { getCheckNoChangesMode } from '@angular/core/src/render3/state';
 
 @Component({
   selector: 'app-rsvp',
@@ -7,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RsvpComponent implements OnInit {
   currentTab: number;
-  n: number;
 
-  constructor() {
-  }
+  constructor(
+    private _router: Router
+  ) {}
 
   ngOnInit() {
     this.currentTab = 0; // Current tab is set to be the first tab (0)
@@ -19,18 +21,28 @@ export class RsvpComponent implements OnInit {
 
   showTab(n) {
     var tab = document.getElementsByClassName("tab");
+    var prevBtn = document.getElementById("prevBtn");
+    var nextBtn = document.getElementById("nextBtn");
+
     tab[n].setAttribute("style", "display: block");
     
-    if (this.n == 0) {
-      document.getElementById("prevBtn").style.display = "none";
+    if (n == 0) {
+      prevBtn.style.display = "none";
     } else {
-      document.getElementById("prevBtn").style.display = "inline";
+      prevBtn.style.display = "inline";
+      prevBtn.style.marginRight = "1rem";
     }
 
-    if (this.n == (tab.length - 1)) {
-      document.getElementById("nextBtn").innerHTML = "Submit";
+    if (n == (tab.length - 2)) {
+      nextBtn.innerHTML = "Submit";
+    } else if (n == (tab.length - 1)) {
+      nextBtn.style.display = "none";
+      prevBtn.style.display = "none";
+      setTimeout(() => this.goHome(), 2000);
+    } else if (n === 0) {
+      nextBtn.innerHTML = "Find My Invitation";
     } else {
-      document.getElementById("nextBtn").innerHTML = "Next";
+      nextBtn.innerHTML = "Next";
     }
 
     this.fixStepIndicator(n);
@@ -38,43 +50,13 @@ export class RsvpComponent implements OnInit {
 
     nextPrev(n) {
       var tab = document.getElementsByClassName("tab");
-      var prevBtn = document.getElementById("nextBtn");
-      var nextBtn = document.getElementById("nextBtn");
-
-      // if (n == 1 && !this.validateForm()) return false;
 
       tab[this.currentTab].setAttribute("style", "display: none");
 
       this.currentTab = this.currentTab + n;
 
-
-      var rsvpForm = <HTMLFormElement>document.getElementById("rsvpForm");
-
-      if (this.currentTab >= tab.length) {
-        this.currentTab = this.currentTab + n;
-        rsvpForm.submit();
-        return false;
-      }
-
       this.showTab(this.currentTab);
-      console.log(this.currentTab);
     }
-    
-    // validateForm() {
-    //   var x, y, i, valid = true;
-    //   x = document.getElementsByClassName("tab");
-    //   y = x[this.currentTab].getElementsByTagName("input");
-    //   for (i = 0; i < y.length; i++) {
-    //     if (y[i].value == "") {
-    //       y[i].className += " invalid";
-    //       valid = false;
-    //     }
-    //   }
-    //   if (valid) {
-    //     document.getElementsByClassName("step")[this.currentTab].className += " finish";
-    //   }
-    //   return valid; 
-    // }
 
     fixStepIndicator(n) {
       // This function removes the "active" class of all steps...
@@ -84,5 +66,9 @@ export class RsvpComponent implements OnInit {
       }
       //... and adds the "active" class on the current step:
       x[n].className += " active";
+    }
+
+    goHome() {
+      this._router.navigate(['/']);
     }
 }

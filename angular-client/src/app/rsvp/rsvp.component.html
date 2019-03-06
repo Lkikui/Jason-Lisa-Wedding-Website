@@ -1,7 +1,6 @@
 <div class="container">
   <div class="row">
     <div class="col text-center">
-      <h2 class="capsFont">RSVP</h2>
       <h3 class="cursiveFont">The Details</h3>
       <p>Friday, October 4, 2019</p>
       <p>5:00 PM</p>
@@ -9,76 +8,88 @@
       <h3 class="cursiveFont">Ceremony & Reception</h3>
       <p>Ardenwood Historic Farm</p>
       <p>34600 Ardenwood Blvd., Fremont, CA 94555</p>
-      <a routerLink="/details"><button class="btn btn-info">More Details</button></a>
+      <a routerLink="/details"><button class="btn btn-burgundy">More Details</button></a>
     </div>
+
     <div class="col">
       <form id="rsvpForm" class="card container" action="">
-          <!-- One "tab" for each step in the form: -->
-          <div class="tab form-group">
-            <p class="text-center">We hope you can join us!</p>
-            <p class="text-center">Please enter your name below to find your invitation.</p>
-            <input type="text" id="mainFirstName" class="form-control" placeholder="First Name" oninput="this.className = ''">
-            <input type="text" id="mainLastName" class="form-control" placeholder="Last Name" oninput="this.className = ''">
-          </div>
+        <h2 class="capsFont text-center">RSVP</h2>
+
+        <!-- One "tab" for each step in the form: -->
+        <div class="tab">
+          <p class="text-center">We hope you can join us!</p>
+          <p class="text-center">Please enter your name below.</p>
           
-          <div class="tab form-group text-center">
-            <p>Guest 1 of x:</p>
-            <h5 class="font-weight-bold">Lisa Ryland</h5>
-
-            <strong><p>Wedding Ceremony</p></strong>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-secondary">Accept</button>
-              <button type="button" class="btn btn-secondary">Decline</button>
-            </div>
-
-            <strong><p>Reception</p></strong>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-secondary">Accept</button>
-              <button type="button" class="btn btn-secondary">Decline</button>
-            </div>
+          <div class="form-group">
+            <input type="text" id="mainFirstName" class="form-control col-lg-12" placeholder="First Name">
           </div>
-          
-          <div class="tab form-group text-center">
-            <p>Guest 2 of x:</p>
-            <h5 class="font-weight-bold">Jason McClure</h5>
-
-            <strong><p>Wedding Ceremony</p></strong>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-secondary">Accept</button>
-              <button type="button" class="btn btn-secondary">Decline</button>
-            </div>
-
-            <strong><p>Reception</p></strong>
-            <div class="btn-group" role="group">
-              <button type="button" class="btn btn-secondary">Accept</button>
-              <button type="button" class="btn btn-secondary">Decline</button>
-            </div>
+          <div class="form-group">
+            <input type="text" id="mainLastName" class="form-control col-lg-12" placeholder="Last Name">
           </div>
-          
-          <div class="tab form-group">
-            <ul>
-              <li>List guests attending and their yes/no</li>
-              <li>Add events (if there's time)</li>
-            </ul>
-            <label for="notesInput">Send a note to the couple (optional)</label>
-            <textarea class="form-control" name="notesInput" id="notesInput"></textarea>
-            <small id="notesHelp" class="form-text text-muted">320 Characters left</small>
+        </div>
+
+        <div class="tab form-group text-center">
+          <p>Guest 1 of x:</p>
+          <h5 class="font-weight-bold">Lisa Ryland</h5>
+
+          <p class="font-weight-bold">Wedding Ceremony</p>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary">Accept</button>
+            <button type="button" class="btn btn-secondary">Decline</button>
           </div>
 
-          <div style="overflow:auto;">
-            <div ng-controller="nextPrev" style="float:right;">
-              <button type="button" id="prevBtn" (click)="nextPrev(-1)">Previous</button>
-              <button type="button" id="nextBtn" (click)="nextPrev(1)">Next</button>
-            </div>
+          <p class="font-weight-bold">Reception</p>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary">Accept</button>
+            <button type="button" class="btn btn-secondary">Decline</button>
           </div>
-          
-          <!-- Circles which indicates the steps of the form: -->
-          <div style="text-align:center;margin-top:40px;">
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
-            <span class="step"></span>
+        </div>
+        
+        <div class="tab form-group text-center">
+          <p>Guest 2 of x:</p>
+          <h5 class="font-weight-bold">Jason McClure</h5>
+
+          <strong><p>Wedding Ceremony</p></strong>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary">Accept</button>
+            <button type="button" class="btn btn-secondary">Decline</button>
           </div>
+
+          <strong><p>Reception</p></strong>
+          <div class="btn-group" role="group">
+            <button type="button" class="btn btn-secondary">Accept</button>
+            <button type="button" class="btn btn-secondary">Decline</button>
+          </div>
+        </div>
+        
+        <div class="tab form-group">
+          <ul>
+            <li>List guests attending and their yes/no</li>
+            <li>Add events (if there's time)</li>
+          </ul>
+          <label for="notesInput">Send a note to the couple (optional)</label>
+          <textarea class="form-control" name="notesInput" id="notesInput"></textarea>
+          <small id="notesHelp" class="form-text text-muted">320 Characters left</small>
+        </div>
+
+        <div class="tab">
+          <p class="text-center">Thanks, we've received your RSVP</p>
+        </div>
+
+        <div style="overflow:auto;">
+          <div class="text-center" ng-controller="nextPrev">
+            <button class="btn btn-burgundy" type="button" id="prevBtn" (click)="nextPrev(-1)">Previous</button>
+            <button class="btn btn-burgundy" type="button" id="nextBtn" (click)="nextPrev(1)">Next</button>
+          </div>
+        </div>
+        
+        <!-- Circles which indicates the steps of the form: -->
+        <div class="text-center" style="margin-top:40px;">
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+          <span class="step"></span>
+        </div>
       </form>
     </div>
   </div>
