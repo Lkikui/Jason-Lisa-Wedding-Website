@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { getCheckNoChangesMode } from '@angular/core/src/render3/state';
+import { GuestService } from '../guest.service';
 
 @Component({
   selector: 'app-rsvp',
@@ -8,15 +9,37 @@ import { getCheckNoChangesMode } from '@angular/core/src/render3/state';
   styleUrls: ['./rsvp.component.css']
 })
 export class RsvpComponent implements OnInit {
+  guests:any[] = [];
   currentTab: number;
 
   constructor(
-    private _router: Router
+    private _router: Router,
+    private guestService: GuestService
   ) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
+    this.guestService.getGuests()
+      .then(guests => this.guests = guests.guests.reverse().slice(0,3))
+
     this.currentTab = 0; // Current tab is set to be the first tab (0)
     this.showTab(this.currentTab); // Display the current tab
+    (function() {
+      'use strict';
+      window.addEventListener('load', function() {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation');
+        // Loop over them and prevent submission
+        var validation = Array.prototype.filter.call(forms, function(form) {
+          form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+          }, false);
+        });
+      }, false);
+    })();
   }
 
   showTab(n) {
@@ -28,6 +51,7 @@ export class RsvpComponent implements OnInit {
     
     if (n == 0) {
       prevBtn.style.display = "none";
+
     } else {
       prevBtn.style.display = "inline";
       prevBtn.style.marginRight = "1rem";

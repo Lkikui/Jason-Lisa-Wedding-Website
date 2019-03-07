@@ -1,31 +1,63 @@
-var MongoClient = require('mongodb').MongoClient
-  , assert = require('assert');
+// ./wedding-website/server.js
+import express from 'express';
+import path from 'path';
+import bodyParser from 'body-parser';
+import logger from 'morgan';
+import mongoose from 'mongoose';
+import SourceMapSupport from 'source-map-support';
+import cors from 'cors';
 
-// Connection URL
-var url = 'mongodb://localhost:27017/wedding-website';
+// import routes
+import weddingRoutes from './routes/wedding.server.route';
 
-// Use connect method to connect to the server
-MongoClient.connect(url, { useNewUrlParser: true },
-  function(err, db) {
-    assert.equal(null, err);
-    console.log("Connected successfully to server");
+// define our app using express
+const app = express();
 
-    db.close();
-  }
-);
+// allow-cors
+app.use(function(req,res,next){
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+})
+// configure app
+app.use(logger('dev'));
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
 
-var insertDocuments = function(db, callback) {
-    // Get the documents collection
-    var collection = db.collection('documents');
-    
-    // Insert some documents
-    collection.insertMany([
-      {a : 1}, {a : 2}, {a : 3}
-    ], function(err, result) {
-      assert.equal(err, null);
-      assert.equal(3, result.result.n);
-      assert.equal(3, result.ops.length);
-      console.log("Inserted 3 documents into the collection");
-      callback(result);
-    });
-}
+// var cors = require('cors');
+app.use(cors());
+
+// set the port
+const port = process.env.PORT || 3001;
+
+// connect to database
+var mongoDB = 'mongodb://127.0.0.1/wedding-website-app';
+
+mongoose.connect(mongoDB, {
+  useNewUrlParser: true
+});
+
+mongoose.Promise = global.Promise;
+
+var db = mongoose.connection;
+db.on('error', console.error.bind(console, 'MongoDB connection error:'));
+
+// add Source Map Support
+SourceMapSupport.install();
+
+app.use('/api', weddingRoutes);
+
+app.get('/', (req,res) => {
+  return res.send('Api working');
+})
+
+// catch 404
+app.use((req, res, next) => {
+  res.status(404).send('<h2 align=center>Page Not Found!</h2>');
+});
+
+// start the server
+app.listen(port,() => {
+  console.log(`App Server Listening at ${port}`);
+});

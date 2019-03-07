@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { CdkStepperModule } from '@angular/cdk/stepper';
+import { HttpModule } from '@angular/http';
+import { GuestService } from './guest.service';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home.component';
@@ -30,9 +32,10 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     BrowserModule,
     AppRoutingModule,
     PhotoRoutingModule,
-    CdkStepperModule
+    CdkStepperModule,
+    HttpModule
   ],
-  providers: [],
+  providers: [GuestService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

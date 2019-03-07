@@ -17,7 +17,7 @@ input.form-control {
     font-size: 15px;
 }
 
-input.form-control, div.btn-group {
+div.form-group, div.btn-group {
     margin-bottom: 1rem;
 }
 
