@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { getCheckNoChangesMode } from '@angular/core/src/render3/state';
 import { GuestService } from '../guest.service';
+import { Guest } from '../../guest';
+import { HEADER_OFFSET } from '@angular/core/src/render3/interfaces/view';
 
 @Component({
   selector: 'app-rsvp',
@@ -11,6 +13,8 @@ import { GuestService } from '../guest.service';
 export class RsvpComponent implements OnInit {
   guests:any[] = [];
   currentTab: number;
+  guest: any;
+  submitted = false;
 
   constructor(
     private _router: Router,
@@ -18,6 +22,8 @@ export class RsvpComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
+    this.guest = {mainFirstName: "", mainLastName: ""};
+
     this.guestService.getGuests()
       .then(guests => this.guests = guests.guests.reverse().slice(0,3))
 
@@ -40,6 +46,10 @@ export class RsvpComponent implements OnInit {
         });
       }, false);
     })();
+  }
+
+  onSubmit() {
+    this.submitted = true;
   }
 
   showTab(n) {
@@ -95,4 +105,7 @@ export class RsvpComponent implements OnInit {
     goHome() {
       this._router.navigate(['/']);
     }
+
+    // TODO: Remove this when we're done
+    get diagnostic() { return JSON.stringify(this.guest); }
 }

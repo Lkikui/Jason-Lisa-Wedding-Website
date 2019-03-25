@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CdkStepperModule } from '@angular/cdk/stepper';
 import { HttpModule } from '@angular/http';
 import { GuestService } from './guest.service';
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './home.component';
@@ -33,7 +34,8 @@ import { RsvpComponent } from './rsvp/rsvp.component';
     AppRoutingModule,
     PhotoRoutingModule,
     CdkStepperModule,
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [GuestService],
   bootstrap: [AppComponent]

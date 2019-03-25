@@ -1,4 +1,4 @@
-<h2 align="center">Guest List</h2>
+<!-- <h2 align="center">Guest List</h2>
 <table id="mytable" class="table table-bordred table-striped">
   <thead>
     <th>Guest</th>
@@ -13,7 +13,7 @@
       </tr>
     <tr>
   </tbody>
-</table>
+</table> -->
 
 <div class="container">
   <div class="row">
@@ -25,33 +25,51 @@
       <h3 class="cursiveFont">Ceremony & Reception</h3>
       <p>Ardenwood Historic Farm</p>
       <p>34600 Ardenwood Blvd., Fremont, CA 94555</p>
-      <a routerLink="/details"><button class="btn btn-burgundy">More Details</button></a>
+      <!-- <a routerLink="/details"><button class="btn btn-burgundy">More Details</button></a> -->
     </div>
 
     <div class="col card container">
-      <form id="nameForm" class=" needs-validation" novalidate action="">
+      <form #nameForm="ngForm" id="nameForm" class=" needs-validation" novalidate action="">
         <h2 class="capsFont text-center">RSVP</h2>
 
         <!-- One "tab" for each step in the form: -->
         <div class="tab">
           <p class="text-center">We hope you can join us!</p>
           <p class="text-center">Please enter your name below.</p>
-          
+
+          <!-- first name -->
           <div class="form-group">
-            <input type="text" id="mainFirstName" class="form-control col-lg-12" placeholder="First Name" required>
-            <div class="invalid-feedback">
-              First name is required.
+            <input type="text" id="mainFirstName" class="form-control" placeholder="First Name" 
+              required
+              [(ngModel)]="guest.mainFirstName" 
+              name="mainFirstName"
+              #firstName="ngModel"
+            >
+            <div [hidden]="firstName.valid || firstName.pristine"
+              class="alert alert-danger">
+              First name is required
             </div>
           </div>
+
+          <!-- last name -->
           <div class="form-group">
-            <input type="text" id="mainLastName" class="form-control col-lg-12" placeholder="Last Name" required>
-            <div class="invalid-feedback">
-              Last name is required.
+            <input type="text" id="mainLastName" class="form-control"
+              placeholder="Last Name" 
+              required
+              [(ngModel)]="guest.mainLastName" 
+              name="mainLastName"
+              #lastName="ngModel"
+            >
+            <div [hidden]="lastName.valid || lastName.pristine"
+              class="alert alert-danger">
+              Last name is required
             </div>
           </div>
-          <button [routerLink]="['/' + guest._id]" class="btn btn-burgundy" type="submit">Find My Invitation</button>
-        </div>
+
+          <button class="btn btn-burgundy" type="submit">Find My Invitation</button>
+        </div> <!-- first tab -->
       </form>
+
       <form id="rsvpForm" action="">
         <div class="tab form-group text-center">
           <p>Guest 1 of x:</p>
