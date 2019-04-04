@@ -12,8 +12,8 @@ router.route('/')
     .post(guestController.addGuest)
     .put(guestController.updateGuest);
 
-router.route('/:id')
-    .get(guestController.getGuest)
-    .delete(guestController.deleteGuest);
+// router.route('/:id')
+//     .get(guestController.getGuest)
+//     .delete(guestController.deleteGuest);
 
 export default router;

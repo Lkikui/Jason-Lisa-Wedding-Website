@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Params, Router } from '@angular/router';
+import { ActivatedRoute, Params, Router, ParamMap } from '@angular/router';
 import { getCheckNoChangesMode } from '@angular/core/src/render3/state';
 import { GuestService } from '../guest.service';
 import { Guest } from '../../guest';
@@ -18,7 +18,8 @@ export class RsvpComponent implements OnInit {
 
   constructor(
     private _router: Router,
-    private guestService: GuestService
+    private guestService: GuestService,
+    private _route: ActivatedRoute
   ) {}
 
   ngOnInit(): void {
@@ -48,8 +49,11 @@ export class RsvpComponent implements OnInit {
     })();
   }
 
-  onSubmit() {
+  onNameSubmit() {
+    this.guest = {mainFirstName: this.guest.mainFirstName, mainLastName: this.guest.mainLastName};
+    console.log(`form: ${this.guest.mainFirstName} ${this.guest.mainLastName}`);
     this.submitted = true;
+    this.guestService.getGuestByName();
   }
 
   showTab(n) {

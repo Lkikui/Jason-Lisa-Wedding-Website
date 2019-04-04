@@ -29,7 +29,7 @@
     </div>
 
     <div class="col card container">
-      <form #nameForm="ngForm" id="nameForm" class=" needs-validation" novalidate action="">
+      <form (ngSubmit)="onNameSubmit()" #nameForm="ngForm" id="nameForm" class=" needs-validation" novalidate action="">
         <h2 class="capsFont text-center">RSVP</h2>
 
         <!-- One "tab" for each step in the form: -->
@@ -66,7 +66,7 @@
             </div>
           </div>
 
-          <button class="btn btn-burgundy" type="submit">Find My Invitation</button>
+          <button type="submit" class="btn btn-burgundy" [disabled]="!nameForm.form.valid">Find My Invitation</button>
         </div> <!-- first tab -->
       </form>
 
