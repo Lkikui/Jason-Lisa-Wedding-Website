@@ -53,7 +53,7 @@ export class RsvpComponent implements OnInit {
     this.guest = {mainFirstName: this.guest.mainFirstName, mainLastName: this.guest.mainLastName};
     console.log(`form: ${this.guest.mainFirstName} ${this.guest.mainLastName}`);
     this.submitted = true;
-    this.guestService.getGuestByName();
+    // this.guestService.getGuestByName(_id);
   }
 
   showTab(n) {

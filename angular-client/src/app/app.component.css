@@ -38,3 +38,14 @@ div#navbar > ul > li {
 div#navbar > ul > li > a.nav-link {
     text-transform: uppercase;
 }
+
+div#footer {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+div#footer > img {
+    border: none;
+    display: block;
+    margin: 0 auto;
+}

@@ -16,6 +16,13 @@ export class GuestService {
             .catch(this.handleError)
     }
 
+    getGuestByName(_id:string): Promise<any>{
+        return this.http.get(this.apiUrl + _id)
+            .toPromise()
+            .then(this.handleData)
+            .catch(this.handleError)
+    }
+
     private handleData(res: any) {
         let body = res.json();
         console.log(body); // for development purposes only
