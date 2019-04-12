@@ -1,22 +1,71 @@
+div.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    /* border-image: 
+        url(https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Transparent_Lace_Border_PNG_Clip_Art_Image.png?m=1507431301)
+        27 
+        36px 28px 18px 8px 
+        18px 14px 9px 4px
+        round; */
+    border: solid transparent;
+    /* border-width: 0 76px;
+    border-image: 76 repeat url(https://lh3.googleusercontent.com/o-AmkgUtE-j5QcXB96gMQt80O4UxaDxMiP2En4imiWnF9ZN363dlePAyJRpeJvhQJWjUmRSp9wxKAnyW3AZsKsSmAy4NVD1ROnZ8LXMnT8-JcGac5ch9YXuyyRiyLOhTk5JJynfd8LKMVCg3VnQKAiXoT2CWrB8UHLNEUNcng1YLOyWN9k56q5n3vb8trNtv67SrANk77IiFpoM8_N0eu1i7zkqtk_kI2cxwwUn85dvHt42IkKzC1Q1TVNrG1cJ0-FKRaT9APUf3yGh79p423Zn-p6RCz2oeqT1uUu2qrVrVdn58betT27ROxrEjIhryCOTjsI4_A_IK9Zy5O4GJ7Y92DCNe1Ug18eetmFGMxW6eyuZJ9MkqXrGH1dCv43dJYWQNYjn7N-dB63DeDCf3P6X_ARUKS_lKZfSPyazlBRAPrBVvFaIu8RXJh3bdM0SfSR6SIOuy4Wzo_8DF8rHZ71YJMq9yQ7yE4Eend3VsFqan2jasLpQd2oUN-dE82QUs6v2PoOynQhVqkUDe5AkIKn4BGX1YnoqImLRMUVYzYN0WVx-ikxEWgDVTnYU9PqK5D41ePIyTdNNq3BLB2s-5RMqyaILGageeZhE2Mv14_QYyY5-PQpYK-pvBG6iKNBEZc91cDYXSnuVKBeV8j5hYE00HAJYm3hiIuux23JwUC5POkIkzXDNJcV06Wr_FdNc5__FiWEPe39ANlRpgx4KWB7fJ=w76-h320-no); */
+}
+
+div.wrapper:before {
+    content: " ";
+    background-image: url(https://lh3.googleusercontent.com/96_1-6pZIPKEsk0D-cZgLAj3GwrofXhxBU2x_9jm7yYJPFlrYzBVZWUfdX8L0igqBgF77QdqBr_jdnJKV_SHGV7IRRfqAX0FxNQok9rf3W6CrBUT_q2YkjBTmjcPW_7MD7umv1roD1W801lnxp3KcoKIb_frKuB1pSlLDfEXw2J2-kpFoBgbpdF7i7I5vvRlM6qX7qDpVWuwW-KPvvcocZJRHBftmDpwQcTBEwITy-Je81vL2TaGAHT5k0LwsRpfYg1Flcx7dN6fik4rgR2l8wZbRHOP_wbupIcznnOjBoVTbC3PMhBwEkKOIOs_OJ7C3QkQwlKIq5kTvhesmqdo8_IxxDd-zU_D3GyKZ0Gu4swSjygk6fLPYvYq9G_fbHSLkghs2XmH3BI92hNVLxW92C-IKqpeHqKXBEXw0mL9Arevgj6qqeSqm5dyikxE18mdURwJgQemuiq142K4cWl_Yrngs8ziqKKcx9P1BeEA6Zn4gKzIz7OGtP8vNkl4zxjtVHBePJlNY4INh28rDjYGbfjLrJtowmsWWPl5U1lNYwcuf3YAzQgXGFsiGUxdwGdsJV3J_3qq_6V2xtETMiIrGnvd-MmAGBWQaC1iqjLxQNjnVDZHuAmZ0O1W45Q4ouRcP45QBRY0-JvIMfciilD5d9R0cV4OrDg3XWNNzNAhd2IHyKBbGHSHxBEPmHdxiK9ebjqsPvrY1RLkqQhCRb6PDi8H=w44-h320-no);
+    position: absolute;
+    width: 43px;
+    height: 100%;
+    top: 0;
+}
+
+div.wrapper:after {
+    content: " ";
+    background-image: url(https://lh3.googleusercontent.com/96_1-6pZIPKEsk0D-cZgLAj3GwrofXhxBU2x_9jm7yYJPFlrYzBVZWUfdX8L0igqBgF77QdqBr_jdnJKV_SHGV7IRRfqAX0FxNQok9rf3W6CrBUT_q2YkjBTmjcPW_7MD7umv1roD1W801lnxp3KcoKIb_frKuB1pSlLDfEXw2J2-kpFoBgbpdF7i7I5vvRlM6qX7qDpVWuwW-KPvvcocZJRHBftmDpwQcTBEwITy-Je81vL2TaGAHT5k0LwsRpfYg1Flcx7dN6fik4rgR2l8wZbRHOP_wbupIcznnOjBoVTbC3PMhBwEkKOIOs_OJ7C3QkQwlKIq5kTvhesmqdo8_IxxDd-zU_D3GyKZ0Gu4swSjygk6fLPYvYq9G_fbHSLkghs2XmH3BI92hNVLxW92C-IKqpeHqKXBEXw0mL9Arevgj6qqeSqm5dyikxE18mdURwJgQemuiq142K4cWl_Yrngs8ziqKKcx9P1BeEA6Zn4gKzIz7OGtP8vNkl4zxjtVHBePJlNY4INh28rDjYGbfjLrJtowmsWWPl5U1lNYwcuf3YAzQgXGFsiGUxdwGdsJV3J_3qq_6V2xtETMiIrGnvd-MmAGBWQaC1iqjLxQNjnVDZHuAmZ0O1W45Q4ouRcP45QBRY0-JvIMfciilD5d9R0cV4OrDg3XWNNzNAhd2IHyKBbGHSHxBEPmHdxiK9ebjqsPvrY1RLkqQhCRb6PDi8H=w44-h320-no);
+    position: absolute;
+    width: 43px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+div.mainContents {
+    margin-top: 0;
+    background-color: white;
+    /* display: inline-block; */
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
+}
+
 div.banner {
     padding: 15px;
 }
 
-div.banner > h1 {
-    font-size: 3rem;
+div.banner > h2 {
+    font-size: 2.5rem;
 }
 
-div.banner > h1, h3 {
+div.banner > h2, h3 {
     font-family: 'Great Vibes', cursive;
 }
 
+div.banner > img {
+    width: 50%;
+}
+
 nav.navbar-light {
-    background-color: #CBE4E3;
-    border-top: dotted;
-    border-bottom: dotted;
+    background-color: #FFEDEF;
+    /* border-top: dotted;
+    border-bottom: dotted; */
     border-width: 8px;
-    border-color: #fff;
-    margin-bottom: 2rem;
+    /* border-color: #000; */
+    margin: 2rem 0;
 }
 
 div#navbar > ul > li > a {
@@ -42,6 +91,11 @@ div#navbar > ul > li > a.nav-link {
 div#footer {
     padding-top: 3rem;
     padding-bottom: 3rem;
+    border: solid 0px;
+    border-bottom-color:#ffe;
+    border-left-color:#eed;
+    border-right-color:#eed;
+    border-top-color:#ccb;
 }
 
 div#footer > img {

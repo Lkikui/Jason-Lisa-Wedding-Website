@@ -1,4 +1,4 @@
-* {
+/* * {
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
@@ -9,10 +9,15 @@
     -webkit-box-sizing: content-box;
     -moz-box-sizing: content-box;
     box-sizing: content-box;
-}
+} */
 
 div.homeComponentMain {
     padding: 16px;
+    width: 100%;
+}
+
+div.text-center {
+    width: 100%;
 }
 
 img.mainPhoto {
