@@ -13,7 +13,7 @@ img:hover {
     position: fixed;
     padding: 0 !important;
     margin: 0;
-    background-color: rgba(40, 40, 40, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     width: 100vw;
 }
 
@@ -40,13 +40,16 @@ img:hover {
 }
 
 /* next / previous arrow buttons */
+ol.carousel-indicators {
+    margin-bottom: 3rem;
+}
+
 a.carousel-control-prev, a.carousel-control-next {
     z-index: -1;
 }
 
 div.modal-dialog.modal-dialog-centered {
     padding: 0;
-    height: 100%;
 }
 
 div.carousel-item {
