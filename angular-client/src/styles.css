@@ -21,7 +21,7 @@ body {
     /* background: repeating-linear-gradient( 90deg, #FFF, #fff 10px, #CBE4E1 10px, #CBE4E3 24px ); */
 }
 
-.backgroundOverlay {
+/* .backgroundOverlay {
     z-index: 1;
     height: 100%;
     width: 100%;
@@ -30,7 +30,7 @@ body {
     top: 0px;
     left: 0px;
     background: rgba(255, 255, 255, 0.2);
-}
+} */
 
 /* img {
     border: 10px solid white;

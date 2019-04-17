@@ -11,12 +11,12 @@ export class EngagementPhotosComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    const outermostContainer = document.createElement("div")
-    outermostContainer.classList.add("modal", "fade");
-    outermostContainer.setAttribute("id", "photoModal");
-    outermostContainer.setAttribute("tabindex", "-1");
-    outermostContainer.setAttribute("role", "dialog");
-    outermostContainer.setAttribute("aria-hidden", "true");
+    // const outermostContainer = document.createElement("div")
+    // outermostContainer.classList.add("modal", "fade");
+    // outermostContainer.setAttribute("id", "photoModal");
+    // outermostContainer.setAttribute("tabindex", "-1");
+    // outermostContainer.setAttribute("role", "dialog");
+    // outermostContainer.setAttribute("aria-hidden", "true");
   }
 
 }
