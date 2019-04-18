@@ -3,15 +3,7 @@ div.wrapper {
     margin: 0 auto;
     width: 80%;
     position: relative;
-    /* border-image: 
-        url(https://gallery.yopriceville.com/var/albums/Free-Clipart-Pictures/Decorative-Elements-PNG/Transparent_Lace_Border_PNG_Clip_Art_Image.png?m=1507431301)
-        27 
-        36px 28px 18px 8px 
-        18px 14px 9px 4px
-        round; */
     border: solid transparent;
-    /* border-width: 0 76px;
-    border-image: 76 repeat url(https://lh3.googleusercontent.com/o-AmkgUtE-j5QcXB96gMQt80O4UxaDxMiP2En4imiWnF9ZN363dlePAyJRpeJvhQJWjUmRSp9wxKAnyW3AZsKsSmAy4NVD1ROnZ8LXMnT8-JcGac5ch9YXuyyRiyLOhTk5JJynfd8LKMVCg3VnQKAiXoT2CWrB8UHLNEUNcng1YLOyWN9k56q5n3vb8trNtv67SrANk77IiFpoM8_N0eu1i7zkqtk_kI2cxwwUn85dvHt42IkKzC1Q1TVNrG1cJ0-FKRaT9APUf3yGh79p423Zn-p6RCz2oeqT1uUu2qrVrVdn58betT27ROxrEjIhryCOTjsI4_A_IK9Zy5O4GJ7Y92DCNe1Ug18eetmFGMxW6eyuZJ9MkqXrGH1dCv43dJYWQNYjn7N-dB63DeDCf3P6X_ARUKS_lKZfSPyazlBRAPrBVvFaIu8RXJh3bdM0SfSR6SIOuy4Wzo_8DF8rHZ71YJMq9yQ7yE4Eend3VsFqan2jasLpQd2oUN-dE82QUs6v2PoOynQhVqkUDe5AkIKn4BGX1YnoqImLRMUVYzYN0WVx-ikxEWgDVTnYU9PqK5D41ePIyTdNNq3BLB2s-5RMqyaILGageeZhE2Mv14_QYyY5-PQpYK-pvBG6iKNBEZc91cDYXSnuVKBeV8j5hYE00HAJYm3hiIuux23JwUC5POkIkzXDNJcV06Wr_FdNc5__FiWEPe39ANlRpgx4KWB7fJ=w76-h320-no); */
 }
 
 /* left lace border */
@@ -41,24 +33,14 @@ div.wrapper:after {
 div.mainContents {
     margin-top: 0;
     background-color: white;
-    /* display: inline-block; */
     width: 75%;
     margin: 0 auto;
     height: 100%;
-    padding-bottom: 2rem;
 }
 
 div.banner {
     padding: 15px;
 }
-
-/* div.banner > h2 {
-    font-size: 2.5rem;
-}
-
-div.banner > h2, h3 {
-    font-family: 'Great Vibes', cursive;
-} */
 
 div.banner > img {
     width: 50%;
@@ -66,11 +48,6 @@ div.banner > img {
 
 /* navbar element */
 nav.navbar-light {
-    /* background-color: #FFEDEF; */
-    /* border-top: dotted;
-    border-bottom: dotted; */
-    /* border-width: 8px; */
-    /* border-color: #000; */
     margin-bottom: 2rem;
 }
 
@@ -116,17 +93,20 @@ div#navbar > ul > li > a.nav-link {
     text-transform: uppercase;
 }
 
+/* page footer */
 div#footer {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    border: solid 0px;
-    border-bottom-color:#ffe;
-    border-left-color:#eed;
-    border-right-color:#eed;
-    border-top-color:#ccb;
+    margin-top: 5em;
+    background-color: #FFEDEF;
+    box-shadow: 0px 1px 3px rgba(0,0,0,.2);
+    padding: 10px 0;
 }
 
-div#footer > img {
+div#footer > div.inner {
+    border-top: 2px dashed black;
+    border-bottom: 2px dashed black;
+}
+
+div.inner img {
     border: none;
     display: block;
     margin: 0 auto;

@@ -8,17 +8,30 @@ import { discoverLocalRefs } from '@angular/core/src/render3/context_discovery';
 })
 export class AppComponent implements OnInit{
   title = 'My First Angular App!';
+  delay = 100;
   
   ngOnInit() {
-    this.adjustDivWidth();
-    window.onresize = this.adjustDivWidth;
+    let resizeTaskId = null;
+    
+    this.adjustDivWidth(event);
+
+    window.addEventListener('resize', event => {
+      if (resizeTaskId !== null) {
+        clearTimeout(resizeTaskId);
+      }
+
+      resizeTaskId = setTimeout(() => {
+        resizeTaskId = null;
+        this.adjustDivWidth(event);
+      }, this.delay);
+    });
   }
   
-  adjustDivWidth() {
-    var wrapperDiv = $(".wrapper")[0] as HTMLCanvasElement;
-    var innerDiv = $(".mainContents")[0] as HTMLCanvasElement;
+  adjustDivWidth(event) {
+    const wrapperDiv = $(".wrapper")[0] as HTMLCanvasElement;
+    let innerDiv = $(".mainContents")[0] as HTMLCanvasElement;
 
-    innerDiv.style.width = `${wrapperDiv.offsetWidth - 43 - 65 }px`;
+    innerDiv.style.width = `${wrapperDiv.clientWidth - (43 * 2 + 18) }px`;
   }
 
 }
