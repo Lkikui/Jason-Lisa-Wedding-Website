@@ -1,14 +1,23 @@
 // ./wedding-website/server.js
-import express from 'express';
-import path from 'path';
-import bodyParser from 'body-parser';
-import logger from 'morgan';
-import mongoose from 'mongoose';
-import SourceMapSupport from 'source-map-support';
-import cors from 'cors';
+// import express from 'express';
+// import path from 'path';
+// import bodyParser from 'body-parser';
+// import logger from 'morgan';
+// import mongoose from 'mongoose';
+// import SourceMapSupport from 'source-map-support';
+// import cors from 'cors';
+
+const express = require("express");
+const path = require("path");
+const bodyParser = require("body-parser");
+const logger = require("morgan");
+const mongoose = require("mongoose");
+const SourceMapSupport = require("source-map-support");
+const cors = require("cors");
 
 // import routes
-import weddingRoutes from './routes/wedding.server.route';
+// import weddingRoutes from './routes/wedding.server.route';
+const weddingRoutes = require('./routes/wedding.server.route');
 
 // define our app using express
 const app = express();

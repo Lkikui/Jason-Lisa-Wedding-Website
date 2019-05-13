@@ -1,7 +1,7 @@
 // ./jason-lisa-wedding-website/models/wedding.server.model.js
-import mongoose from 'mongoose';
+const mongoose = require('mongoose');
 
-var Schema = mongoose.Schema({
+const Schema = mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
@@ -23,4 +23,6 @@ var Schema = mongoose.Schema({
   }]
 });
 
-export default mongoose.model('Guest', Schema);
+// export default mongoose.model('Guest', Schema);
+const Guest = mongoose.model('Guest', Schema);
+module.exports = Guest;
